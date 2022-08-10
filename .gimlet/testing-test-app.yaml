@@ -1,9 +1,6 @@
 app: test-app
 env: testing
 namespace: default
-deploy:
-  branch: bugfix/*
-  event: pr
 chart:
   repository: https://chart.onechart.dev
   name: onechart
