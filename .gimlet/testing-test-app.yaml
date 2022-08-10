@@ -2,8 +2,8 @@ app: test-app
 env: testing
 namespace: default
 deploy:
-  branch: main
-  event: tag
+  branch: main-test
+  event: push
 chart:
   repository: https://chart.onechart.dev
   name: onechart
