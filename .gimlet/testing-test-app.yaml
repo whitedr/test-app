@@ -3,7 +3,7 @@ env: testing
 namespace: default
 deploy:
   branch: main-test
-  event: tag
+  event: push
 chart:
   repository: https://chart.onechart.dev
   name: onechart
