@@ -1,9 +1,6 @@
 app: test-app
 env: testing
 namespace: default
-deploy:
-  tag: v1
-  event: tag
 chart:
   repository: https://chart.onechart.dev
   name: onechart
