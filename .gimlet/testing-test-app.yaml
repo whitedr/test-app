@@ -2,7 +2,6 @@ app: test-app
 env: testing
 namespace: default
 deploy:
-  branch: feature/x
   event: push
 chart:
   repository: https://chart.onechart.dev
