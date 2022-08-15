@@ -2,7 +2,7 @@ app: test-app
 env: testing
 namespace: deded
 deploy:
-  event: pr
+  event: push
 chart:
   repository: https://chart.onechart.dev
   name: onechart
