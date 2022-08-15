@@ -1,8 +1,6 @@
 app: test-app
 env: testing
 namespace: default
-deploy:
-  event: pr
 chart:
   repository: https://chart.onechart.dev
   name: onechart
