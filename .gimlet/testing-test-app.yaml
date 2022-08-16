@@ -1,4 +1,4 @@
-app: test-app
+app: "{{ printf \"gimlet-dashboard-%s\" .GITHUB_BRANCH | sanitizeDNSName }}"
 env: testing
 namespace: default
 chart:
