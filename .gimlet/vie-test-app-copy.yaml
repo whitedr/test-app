@@ -1,6 +1,6 @@
 app: test-app-copy
 env: vie
-namespace: staging
+namespace: default
 chart:
   repository: https://chart.onechart.dev
   name: onechart
