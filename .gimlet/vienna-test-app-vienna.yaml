@@ -1,6 +1,6 @@
 app: test-app-vienna
 env: vienna
-namespace: vienna
+namespace: default
 chart:
   repository: https://chart.onechart.dev
   name: onechart
