@@ -2,8 +2,8 @@ app: test-app
 env: staging
 namespace: staging
 deploy:
-  branch: nosuchbranch/*
-  event: pr
+  branch: main
+  event: push
 chart:
   repository: https://chart.onechart.dev
   name: onechart
