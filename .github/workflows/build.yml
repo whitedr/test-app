@@ -23,6 +23,7 @@ jobs:
         access_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Check jq
       run: |
+        pwd
         jq --version
       shell: bash
     - name: ⬇️ Check out
