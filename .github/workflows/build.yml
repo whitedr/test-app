@@ -21,11 +21,10 @@ jobs:
       uses: styfle/cancel-workflow-action@0.9.1
       with:
         access_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Check jq
+    - name: Install jq tool
       run: |
-        pwd
-        jq --version
-      shell: bash
+        sudo apt-get update
+        sudo apt-get install jq
     - name: ⬇️ Check out
       uses: actions/checkout@v1
       with:
