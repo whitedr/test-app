@@ -30,6 +30,8 @@ do
     fi
 done
 
+gimlet artifact add -f artifact.json --var "SHA=$HASH"
+
 gimlet artifact add -f artifact.json --var GITHUB_SHA=$HASH --var GITHUB_BRANCH=$BRANCH
 
-# gimlet artifact push -f artifact.json
+gimlet artifact push -f artifact.json
