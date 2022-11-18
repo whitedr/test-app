@@ -1,6 +1,8 @@
 app: test-app
 env: gitops-state
 namespace: default
+deploy:
+  event: push
 chart:
   repository: https://chart.onechart.dev
   name: onechart
