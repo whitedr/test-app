@@ -8,8 +8,28 @@ chart:
   name: onechart
   version: 0.38.0
 values:
+  containerPort: 9000
   gitRepository: gimlet-io/test-app
   gitSha: '{{ .SHA }}'
+  image:
+    repository: ghcr.io/gimlet-io/test-app
+    tag: '{{ .SHA }}'
+  ingress:
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+      kubernetes.io/ingress.class: nginx
+    host: test-app.staging.turbopizza.net
+    tlsEnabled: true
+  replicas: 2
+  resources:
+    limits:
+      cpu: 50m
+      memory: 50Mi
+    requests:
+      cpu: 50m
+      memory: 10Mi
+  vars:
+    MY_NEW_DUMMY_VAR: my-new-dummy-value
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
