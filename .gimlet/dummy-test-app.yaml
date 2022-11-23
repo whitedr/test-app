@@ -1,5 +1,5 @@
 app: test-app
-env: state-testing
+env: dummy
 namespace: default
 deploy:
   event: push
