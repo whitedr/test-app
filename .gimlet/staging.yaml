@@ -1,6 +1,6 @@
 app: test-app
 env: staging
-namespace: staging
+namespace: staging1
 chart:
   repository: https://chart.onechart.dev
   name: onechart
@@ -8,7 +8,7 @@ chart:
 values:
   containerPort: 9000
   gitRepository: gimlet-io/test-app
-  gitSha: '{{ .SHA1 }}'
+  gitSha: '{{ .SHA }}'
   image:
     repository: ghcr.io/gimlet-io/test-app
     tag: '{{ .SHA }}'
