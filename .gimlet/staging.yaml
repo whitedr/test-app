@@ -8,7 +8,7 @@ chart:
 values:
   containerPort: 9000
   gitRepository: gimlet-io/test-app
-  gitSha: '{{ .SHA }}'
+  gitSha: '{{ .SHA1 }}'
   image:
     repository: ghcr.io/gimlet-io/test-app
     tag: '{{ .SHA }}'
