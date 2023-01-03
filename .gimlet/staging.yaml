@@ -30,4 +30,25 @@ values:
     MY_NEW_DUMMY_VAR: my-new-dummy-value
 strategicMergePatches: ""
 json6902Patches: []
-manifests: ""
+manifests: |
+  ---
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: myapp
+    namespace: staging
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app.kubernetes.io/name: onechart
+        app.kubernetes.io/instance: myapp
+    template:
+      metadata:
+        labels:
+          app.kubernetes.io/name: onechart
+          app.kubernetes.io/instance: myapp
+      spec:
+        containers:
+          - name: myapp
+            image: "nginx"
