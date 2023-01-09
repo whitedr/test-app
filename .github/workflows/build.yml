@@ -41,7 +41,7 @@ jobs:
         platforms: linux/amd64
         push: true
         tags: |
-          ghcr.io/gimlet-io/test-app:${{ github.sha }}
+          ghcr.io/whitedr/test-app:${{ github.sha }}
     - name: 🚀 Ship artifact
       id: ship
       uses: gimlet-io/gimlet-artifact-shipper-action@v0.8.2
